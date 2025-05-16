@@ -1,3 +1,49 @@
+use_default_settings: true
+
+server:
+  bind_address: "0.0.0.0"
+  port: 8080
+  cors: true
+  secret_key: "lawyour_super_secret_key_82345!!@#"
+
+ui:
+  default_locale: en
   formats:
     - html
     - json
+
+search:
+  safe_search: 0
+  autocomplete: "google"
+
+redis:
+  url: null
+
+results_on_new_tab: false
+
+outgoing:
+  request_timeout: 2.0
+  useragent_suffix: "LawYourBot/1.0"
+
+engines:
+  - name: google
+    engine: google
+    shortcut: g
+    disabled: false
+
+  - name: bing
+    engine: bing
+    shortcut: b
+    disabled: false
+
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: w
+    disabled: false
+
+plugins:
+  - searx.plugins.default_useragent
+  - searx.plugins.default_headers
+  - searx.plugins.logger
+  - searx.plugins.self_info
+  - searx.plugins.ping
