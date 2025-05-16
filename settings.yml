@@ -1,0 +1,16 @@
+use_default_settings: true
+
+server:
+  bind_address: "0.0.0.0"
+  port: 8080
+  cors: true
+
+ui:
+  default_locale: en
+  formats:
+    - html
+    - json
+
+search:
+  safe_search: 0
+  autocomplete: "google"
