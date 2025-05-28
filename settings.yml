@@ -1,7 +1,10 @@
-use_default_settings: true
+general:
+  instance_name: Custom SearXNG
+  enable_metrics: true
 
 search:
   safe_search: 0
+  language: "en"
   formats:
     - html
     - json
@@ -10,4 +13,3 @@ engines:
   - name: google
     engine: google
     shortcut: g
-    disabled: false
